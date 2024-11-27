@@ -1,0 +1,175 @@
+/* Reset de margin e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/* Estilos Globais */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ff0000, #ffffff);
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: linear-gradient(45deg, #ff0000, #ffffff);
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 5px solid #ff0000;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    animation: fadeIn 2s ease-in-out;
+}
+
+header .tagline {
+    font-size: 1.2em;
+    color: white;
+    margin-top: 10px;
+    font-weight: lighter;
+}
+
+/* Main Content */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.product-info {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1200px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    animation: slideIn 1s ease-out;
+}
+
+.product-info .product-image img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 15px;
+    border: 5px solid #ff0000;
+    transition: transform 0.3s ease;
+}
+
+.product-info .product-image img:hover {
+    transform: scale(1.1);
+}
+
+.product-details {
+    max-width: 600px;
+    margin-left: 30px;
+}
+
+.product-details h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #252323;
+}
+
+/* Destacar descrição */
+.product-details p {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.product-details p strong {
+    color: #6cdf89;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Novo estilo para o preço */
+.product-price {
+    font-size: 2em; /* Aumenta o tamanho da fonte */
+    font-weight: bold; /* Deixa o preço mais destacado */
+    color: #15d36a; /* Coloca o preço em vermelho */
+    background-color: #ffffff; /* Fundo suave para destacar */
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px  #0b4444; /* Borda vermelha */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para dar um efeito de destaque */
+    text-align: center; /* Alinha o texto no centro */
+    transition: all 0.3s ease;
+}
+
+/* Efeito ao passar o mouse sobre o preço */
+.product-price:hover {
+    background-color: #ffcccc; /* Fundo mais claro ao passar o mouse */
+    transform: scale(1.05); /* Aumenta levemente o tamanho */
+}
+
+/* Botão de Compra */
+.buy-button {
+    background-color: #ff0000;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.buy-button:hover {
+    background-color: #3be272;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 1em;
+}
+
+/* Animações */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes slideIn {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(0); }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .product-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-details {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .product-info .product-image img {
+        max-width: 80%;
+    }
+}
