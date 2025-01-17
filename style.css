@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
 }
 
 /* Estilos Globais */
@@ -68,6 +67,20 @@ main {
     transform: scale(1.1);
 }
 
+/* Aviso abaixo da imagem */
+.product-warning {
+    font-size: 1em;
+    color: #d9534f; /* Vermelho suave para chamar atenção */
+    background-color: #f8d7da; /* Fundo claro para destacar */
+    border: 1px solid #f5c2c7;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 15px;
+    text-align: center;
+    line-height: 1.4;
+    font-weight: bold;
+}
+
 .product-details {
     max-width: 600px;
     margin-left: 30px;
@@ -97,22 +110,22 @@ main {
 
 /* Novo estilo para o preço */
 .product-price {
-    font-size: 2em; /* Aumenta o tamanho da fonte */
-    font-weight: bold; /* Deixa o preço mais destacado */
-    color: #15d36a; /* Coloca o preço em vermelho */
-    background-color: #ffffff; /* Fundo suave para destacar */
+    font-size: 2em;
+    font-weight: bold;
+    color: #15d36a;
+    background-color: #ffffff;
     padding: 10px;
     border-radius: 10px;
-    border: 2px  #0b4444; /* Borda vermelha */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para dar um efeito de destaque */
-    text-align: center; /* Alinha o texto no centro */
+    border: 2px solid #0b4444;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
     transition: all 0.3s ease;
 }
 
 /* Efeito ao passar o mouse sobre o preço */
 .product-price:hover {
-    background-color: #ffcccc; /* Fundo mais claro ao passar o mouse */
-    transform: scale(1.05); /* Aumenta levemente o tamanho */
+    background-color: #ffcccc;
+    transform: scale(1.05);
 }
 
 /* Botão de Compra */
